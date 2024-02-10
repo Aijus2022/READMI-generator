@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title>README.md Generator</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>README.md Generator</h1>
+    <form id="readmeForm">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+
+        <label for="details">Detailed Information:</label><br>
+        <textarea id="details" name="details" rows="4" cols="50"></textarea><br>
+
+        <label for="installation">Installation:</label><br>
+        <textarea id="installation" name="installation" rows="4" cols="50"></textarea><br>
+
+        <label for="usage">Usage:</label><br>
+        <textarea id="usage" name="usage" rows="4" cols="50"></textarea><br>
+
+        <label for="contribution">Contribution Guidelines:</label><br>
+        <textarea id="contribution" name="contribution" rows="4" cols="50"></textarea><br>
+
+        <label for="testing">Testing Instructions:</label><br>
+        <textarea id="testing" name="testing" rows="4" cols="50"></textarea><br>
+
+        <label for="license">License:</label><br>
+        <select id="license" name="license">
+            <option value="MIT License">MIT License</option>
+            <option value="Apache License 2.0">Apache License 2.0</option>
+            <option value="GNU GPLv3">GNU GPLv3</option>
+            <option value="ISC License">ISC License</option>
+            <option value="None">None</option>
+        </select><br>
+
+        <label for="author">Author's Name:</label><br>
+        <input type="text" id="author" name="author"><br>
+
+        <label for="email">Author's Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="github">GitHub Username:</label><br>
+        <input type="text" id="github" name="github"><br>
+
+        <label for="repository">Project Repository URL:</label><br>
+        <input type="text" id="repository" name="repository"><br>
+
+        <label for="website">Project Website URL:</label><br>
+        <input type="text" id="website" name="website"><br>
+
+        <button type="submit">Generate README</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
