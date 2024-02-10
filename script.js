@@ -73,7 +73,7 @@ document.getElementById('readmeForm').addEventListener('submit', function(event)
 function download(filename, text) {
     const element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    element.setAttribute('download', filename);
+    element.setAttribute('download', filename + '.md'); // Set the file extension to .md
 
     element.style.display = 'none';
     document.body.appendChild(element);
@@ -82,3 +82,4 @@ function download(filename, text) {
 
     document.body.removeChild(element);
 }
+
